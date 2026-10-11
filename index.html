@@ -327,6 +327,95 @@
   @media (prefers-reduced-motion: reduce){
     *{transition:none !important; scroll-behavior:auto !important;}
   }
+
+
+  /* Responsive refinements: prevent the soil legend from overflowing into the photo section. */
+  .hero-grid{min-width:0;gap:clamp(28px,4vw,56px);}
+  .hero-copy,.core,.core-legend{min-width:0;}
+  .core{height:auto;min-height:0;align-items:stretch;}
+  .core-tube{flex:0 0 58px;height:auto;min-height:0;align-self:stretch;}
+  .core-legend{display:flex;flex-direction:column;justify-content:flex-start;gap:0;}
+  .legend-row{min-width:0;line-height:1.35;padding:7px 0;}
+  .legend-row span:nth-of-type(2){min-width:0;line-height:1.35;}
+  .legend-row small{line-height:1.4;white-space:normal;max-width:52%;text-align:right;}
+  .field-gallery{padding:38px 0 10px;}
+  .gallery-heading h2{line-height:1.12;}
+  .gallery-heading p{line-height:1.55;max-width:54ch;}
+  .search-section{padding:52px 0 18px;}
+  .search-bar{align-items:stretch;}
+  .search-bar::before{pointer-events:none;}
+  .search-submit{white-space:nowrap;}
+  .results{grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));}
+  .card{min-width:0;}
+  .field div{overflow-wrap:anywhere;}
+  footer{line-height:1.65;}
+
+  @media (max-width:820px){
+    header.hero{padding:38px 0 30px;}
+    .hero-grid{gap:28px;}
+    .core{gap:12px;}
+    .core-tube{flex-basis:46px;border-radius:24px;}
+    .core-legend{flex:1;}
+    .legend-row{display:grid;grid-template-columns:10px minmax(0,1fr);column-gap:9px;align-items:start;padding:9px 0;}
+    .legend-row .swatch{grid-column:1;grid-row:1;margin-top:5px;}
+    .legend-row span:nth-of-type(2){grid-column:2;font-size:13px;}
+    .legend-row small{grid-column:2;max-width:none;text-align:left;margin:3px 0 0;font-size:10px;opacity:.9;}
+    .hero-stats{gap:18px;flex-wrap:wrap;margin-top:23px;}
+    .stat b{font-size:23px;}
+    .hero-copy p{font-size:15.5px;}
+    .gallery-grid{gap:12px;}
+  }
+  @media (max-width:540px){
+    .wrap{padding-left:18px;padding-right:18px;}
+    header.hero{padding:34px 0 26px;}
+    .hero-grid{gap:25px;}
+    h1{font-size:clamp(36px,10vw,46px);line-height:1.02;}
+    .eyebrow{font-size:10px;letter-spacing:.1em;margin-bottom:14px;}
+    .hero-copy p{margin-top:15px;}
+    .hero-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 18px;}
+    .stat:last-child{grid-column:1/-1;}
+    .core{gap:10px;}
+    .core-tube{flex-basis:38px;border-radius:20px;}
+    .legend-row{padding:8px 0;}
+    .legend-row span:nth-of-type(2){font-size:12.5px;}
+    .legend-row small{font-size:9.5px;}
+    .field-gallery{padding:30px 0 6px;}
+    .gallery-heading{margin-bottom:15px;}
+    .gallery-heading h2{font-size:23px!important;}
+    .gallery-heading p{font-size:14px;}
+    .gallery-grid{grid-template-columns:1fr;}
+    .photo-card:first-child{grid-column:auto;}
+    .photo-card{height:190px;}
+    .search-section{padding:42px 0 14px;}
+    .search-head{margin-bottom:18px;}
+    .search-head h2{font-size:25px!important;line-height:1.12;}
+    .search-head p{font-size:14px;line-height:1.55;}
+    .mode-toggle{flex-wrap:wrap;gap:8px;margin-bottom:14px;}
+    .mode-btn{font-size:11px;padding:10px 13px;}
+    .search-bar{display:flex;flex-direction:column;gap:9px;margin-bottom:15px;}
+    .search-bar input{flex-basis:auto;width:100%;padding:15px 14px 15px 43px;font-size:14px;min-height:54px;}
+    .search-bar::before{top:17px;left:16px;transform:none;font-size:19px;}
+    .search-submit{width:100%;min-height:48px;padding:12px 15px;font-size:12px;}
+    .chips,.crop-list{gap:8px;margin-bottom:24px;}
+    .chip,.crop-pill{font-size:11px;line-height:1.4;padding:8px 11px;max-width:100%;}
+    .results{grid-template-columns:minmax(0,1fr);gap:13px;padding-bottom:38px;}
+    .card{padding:20px 18px 18px;border-radius:14px;}
+    .card h3{font-size:21px;line-height:1.12;}
+    .region-tag{font-size:10px;line-height:1.55;overflow-wrap:anywhere;margin-top:5px;}
+    .card p.desc{font-size:13px;line-height:1.6;}
+    .field b{font-size:10px;line-height:1.5;}
+    .field div{font-size:13px;line-height:1.6;}
+    footer{font-size:10.5px;line-height:1.7;padding-bottom:30px;}
+  }
+  @media (max-width:360px){
+    .wrap{padding-left:14px;padding-right:14px;}
+    .core-tube{flex-basis:32px;}
+    .legend-row{column-gap:7px;}
+    .legend-row span:nth-of-type(2){font-size:12px;}
+    .stat b{font-size:21px;}
+    .mode-btn{padding:9px 10px;}
+  }
+
 </style>
 </head>
 <body>
@@ -387,7 +476,7 @@
       <button class="mode-btn" data-mode="crop">Search by crop</button>
     </div>
     <div class="search-bar">
-      <input type="search" id="searchInput" placeholder="Try “cotton”, “Punjab”, “urea”, “laterite”…" aria-label="Search crops, soils, regions, or fertilisers">
+      <input type="search" id="searchInput" placeholder="Try cotton, Punjab, urea…" aria-label="Search crops, soils, regions, or fertilisers">
       <button type="button" id="searchButton" class="search-submit">View field report →</button>
     </div>
     <div class="chips" id="chips"></div>
@@ -516,7 +605,7 @@ modeToggle.querySelectorAll('.mode-btn').forEach(btn=>{
     searchInput.value = '';
     searchInput.placeholder = mode === 'crop'
       ? 'Type a crop, e.g. “cotton”, “ragi”, “tea”…'
-      : 'Try “cotton”, “Punjab”, “urea”, “laterite”…';
+      : 'Try cotton, Punjab, urea…';
     render();
   };
 });
