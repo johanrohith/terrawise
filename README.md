@@ -12,10 +12,9 @@ Terrawise is an interactive reference guide to major Indian soil types, the regi
 
 - **Eight soil profiles** — Explore major Indian soil types through visual sections.
 - **Search** — Find soil types, crops, regions, and related information.
-- **Crop–region cross-check** — Explore matches in the site's simplified reference index.
+- **Crop–region cross-check** — Explore matches in the site's simplified section.
 - **Detailed reports** — Open searchable soil and crop reports for more context.
 - **Interactive facts** — Discover short facts related to soils and agriculture.
-- **Responsive experience** — Browse the guide on different screen sizes, with keyboard and reduced-motion support.
 
 ## Tech Stack
 
