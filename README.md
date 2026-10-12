@@ -27,12 +27,6 @@ Terrawise is an interactive reference guide to major Indian soil types, the regi
 
 ---
 
-<p align="center">
-  <strong>Terrawise</strong><br>
-  <em>Know your soil. Grow smarter.</em><br>
-  <sub>Made by Johan Rohith</sub>
-</p>
-
 ## Why Terrawise?
 
 Soil characteristics and regional conditions are important context when learning about crops, but this information is often spread across separate references. Terrawise aims to make foundational soil and crop information easier to explore in one place, helping learners connect soil types, regions, and associated crops. It is an educational guide, not a substitute for field-specific advice from qualified agricultural professionals.
@@ -41,3 +35,10 @@ Soil characteristics and regional conditions are important context when learning
 
 Explore the homepage's soil profiles or search by soil type, crop, or region, then open a detailed report for additional information. The crop–region cross-check uses a simplified built-in index, so a missing match indicates a gap in that index rather than proof that a crop cannot grow in a location.
 
+---
+
+<p align="center">
+  <strong>Terrawise</strong><br>
+  <em>Know your soil. Grow smarter.</em><br>
+  <sub>Made by Johan Rohith</sub>
+</p>
