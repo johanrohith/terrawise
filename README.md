@@ -1,32 +1,45 @@
-# Terrawise 🌱
+<p align="center">
+  <img src="assets/terrawise-readme-banner.svg" alt="Terrawise — Know your soil. Grow smarter." width="100%">
+</p>
 
-**Know your soil. Grow smarter.**
+Terrawise is an interactive reference guide to major Indian soil types, the regions where they occur, and the crops associated with them. It brings soil profiles, crop-region exploration, and general agricultural reference notes into one visual experience.
 
-Terrawise is a lightweight, responsive field guide to Indian soils and the crops associated with them. It brings soil characteristics, regional distribution, crop information, and general fertiliser and crop-protection notes into one approachable, visual experience.
-
-The site turns agricultural reference information into an interactive journey: a gently animated seedling introduces the homepage, visitors scroll through eight full-width soil sections, and each soil type opens a dedicated report. Search and a crop–region cross-check help connect related entries, while short “Did you know?” facts encourage further exploration.
+<p align="center">
+  <a href="https://johanrohith.me/terrawise/"><img src="https://img.shields.io/badge/EXPLORE-TERRAWISE%20%E2%86%97-527E45?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Explore Terrawise"></a>
+</p>
 
 ## Features
 
-- 🌿 **Living homepage** with an SVG seedling, subtle wind animation, and roots connected to the soil.
-- 🪨 **Eight soil profiles** presented as full-width, clickable sections.
-- 🔎 **Searchable reference guide** for soil types, crops, regions, and related notes.
-- 🌾 **Crop–region cross-check** that connects entries in the site's simplified reference index. A missing match indicates a gap in the index, not proof that a crop cannot grow in that region.
-- 💡 **Interactive soil facts** with simple navigation.
-- 📱 **Responsive design** with keyboard focus and reduced-motion support.
+- **Eight soil profiles** — Explore major Indian soil types through visual sections.
+- **Search** — Find soil types, crops, regions, and related information.
+- **Crop–region cross-check** — Explore matches in the site's simplified reference index.
+- **Detailed reports** — Open searchable soil and crop reports for more context.
+- **Interactive facts** — Discover short facts related to soils and agriculture.
+- **Responsive experience** — Browse the guide on different screen sizes, with keyboard and reduced-motion support.
 
-## Built with
+## Tech Stack
 
-HTML · CSS · JavaScript · Inline SVG
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,github" height="50" alt="HTML, CSS, JavaScript and GitHub">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Inline%20SVG-Illustrations-6C8B4E?style=flat-square" alt="Inline SVG">
+  <img src="https://img.shields.io/badge/Static%20Website-GitHub%20Pages-222222?style=flat-square&logo=githubpages&logoColor=white" alt="Static website">
+</p>
 
-Terrawise is a static website. It does not require a backend, database, build process, or API key.
+---
 
-## Project files
+<p align="center">
+  <strong>Terrawise</strong><br>
+  <em>Know your soil. Grow smarter.</em><br>
+  <sub>Made by Johan Rohith</sub>
+</p>
 
-- `index.html` — homepage, soil explorer, search, crop–region cross-check, and soil facts.
-- `details.html` — searchable soil and crop reports.
-- `favicon.svg` — Terrawise sprout icon.
+## Why Terrawise?
 
-## Scope and information note
+Soil characteristics and regional conditions are important context when learning about crops, but this information is often spread across separate references. Terrawise aims to make foundational soil and crop information easier to explore in one place, helping learners connect soil types, regions, and associated crops. It is an educational guide, not a substitute for field-specific advice from qualified agricultural professionals.
 
-Terrawise is an educational reference guide, not a personalised agronomy service. Crop suitability varies with local soil-test results, water availability, climate, variety, season, and field management. The current crop–region index is simplified and may not cover every district or local condition. For field-specific fertiliser or crop-protection decisions, consult a qualified local agricultural extension service.
+## How It Works
+
+Explore the homepage's soil profiles or search by soil type, crop, or region, then open a detailed report for additional information. The crop–region cross-check uses a simplified built-in index, so a missing match indicates a gap in that index rather than proof that a crop cannot grow in a location.
+
