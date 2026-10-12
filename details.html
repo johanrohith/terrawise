@@ -3,25 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Terrawise field report with crop and soil reference information for Indian agriculture.">
-<title>Field Report — Terrawise</title>
+<meta name="theme-color" content="#e9efdc">
+<meta name="description" content="Explore Terrawise soil profiles, regional distribution, associated crops, and general fertiliser and crop-protection reference notes for India.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Terrawise — Soil & Crop Field Report">
+<meta property="og:description" content="Search Indian soil profiles and explore their regions, crops, and general growing guidance.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>Terrawise — Field Report</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://images.unsplash.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#E8DCC3;--bg-deep:#DED0AE;--ink:#2B2118;--ink-soft:#5C4E3E;--line:rgba(43,33,24,.16);--card:#F3ECD8;--alluvial:#C9A24B;--regur:#2B2620;--red:#8C4A2F;--laterite:#A8452F;--arid:#7C8B5A;--mountain:#5D6B63;--saline:#8E8474;--peaty:#4A4630;}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.55}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.55}
 h1,h2,h3{font-family:'Fraunces',serif;line-height:1.08;font-weight:600;margin:0}a{color:inherit}button,input{font:inherit}.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font:12px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase}
-.back-link{font:11px 'IBM Plex Mono',monospace;text-decoration:none;border:1px solid var(--line);border-radius:24px;padding:10px 14px}.back-link:hover{border-color:var(--laterite)}
-.report-head{padding:44px 0 28px}.eyebrow{font:11px 'IBM Plex Mono',monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:14px}.eyebrow:before{content:'';display:inline-block;width:18px;height:1px;background:var(--laterite);vertical-align:middle;margin-right:9px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font:12px 'DM Mono',monospace;letter-spacing:.1em;text-transform:uppercase}
+.back-link{font:11px 'DM Mono',monospace;text-decoration:none;border:1px solid var(--line);border-radius:24px;padding:10px 14px}.back-link:hover{border-color:var(--laterite)}
+.report-head{padding:44px 0 28px}.eyebrow{font:11px 'DM Mono',monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:14px}.eyebrow:before{content:'';display:inline-block;width:18px;height:1px;background:var(--laterite);vertical-align:middle;margin-right:9px}
 .report-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:center}h1{font-size:clamp(34px,5vw,54px);letter-spacing:-.02em;overflow-wrap:anywhere}h1 em{font-style:italic;color:var(--laterite)}.intro{max-width:58ch;color:var(--ink-soft);font-size:15px;margin:18px 0 0}
 .cover{height:280px;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--bg-deep)}.cover img{width:100%;height:100%;display:block;object-fit:cover}
-.search-again{display:flex;gap:8px;margin-top:24px}.search-again input{flex:1;min-width:0;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}.search-again select{max-width:125px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);padding:0 8px}.search-again button{border:0;border-radius:10px;padding:0 15px;background:var(--laterite);color:white;font:11px 'IBM Plex Mono',monospace;cursor:pointer}
-.summary{display:flex;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;margin:12px 0 24px}.summary strong{font:23px 'Fraunces',serif;display:block}.summary span{font:10px 'IBM Plex Mono',monospace;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.07em}
+.search-again{display:flex;gap:8px;margin-top:24px}.search-again input{flex:1;min-width:0;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}.search-again select{max-width:125px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);padding:0 8px}.search-again button{border:0;border-radius:10px;padding:0 15px;background:var(--laterite);color:white;font:11px 'DM Mono',monospace;cursor:pointer}
+.summary{display:flex;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;margin:12px 0 24px}.summary strong{font:23px 'Fraunces',serif;display:block}.summary span{font:10px 'DM Mono',monospace;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.07em}
 .results-heading{display:flex;justify-content:space-between;gap:14px;align-items:end;margin:30px 0 18px}.results-heading p{margin:5px 0 0;color:var(--ink-soft);font-size:13px}.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;padding-bottom:54px}
-.result-card{background:var(--card);border:1px solid var(--line);border-radius:15px;overflow:hidden;position:relative}.result-card:before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--accent)}.result-card img{width:100%;height:160px;display:block;object-fit:cover}.result-body{padding:21px 22px 24px}.tag{font:10px 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px}.result-card h3{font-size:23px}.region{font-size:11px;color:var(--ink-soft);margin-top:6px}.desc{font-size:13px;color:var(--ink-soft);margin:12px 0 16px}.field{padding-top:12px;margin-top:12px;border-top:1px solid var(--line)}.field b{display:block;font:10px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:var(--laterite);margin-bottom:4px}.field div{font-size:13px}
+.result-card{background:var(--card);border:1px solid var(--line);border-radius:15px;overflow:hidden;position:relative}.result-card:before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--accent)}.result-card img{width:100%;height:160px;display:block;object-fit:cover}.result-body{padding:21px 22px 24px}.tag{font:10px 'DM Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px}.result-card h3{font-size:23px}.region{font-size:11px;color:var(--ink-soft);margin-top:6px}.desc{font-size:13px;color:var(--ink-soft);margin:12px 0 16px}.field{padding-top:12px;margin-top:12px;border-top:1px solid var(--line)}.field b{display:block;font:10px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:var(--laterite);margin-bottom:4px}.field div{font-size:13px}
 .empty{grid-column:1/-1;padding:36px 20px;text-align:center;background:rgba(243,236,216,.55);border:1px dashed var(--line);border-radius:14px;color:var(--ink-soft)}.empty h2{font-size:23px;margin-bottom:8px;color:var(--ink)}.note{font-size:12px;color:var(--ink-soft);padding:14px 0 32px;border-top:1px solid var(--line)}
+.skip-link{position:absolute;z-index:100;left:14px;top:-100px;background:#29472f;color:#fff7e8;border-radius:8px;padding:10px 14px;font:11px 'DM Mono',monospace}
+.skip-link:focus{top:12px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #527e45;outline-offset:3px}
 @media(max-width:760px){.report-grid{grid-template-columns:1fr;gap:22px}.cover{height:225px}.report-head{padding-top:32px}}
 @media(max-width:520px){.wrap{padding:0 16px}.topbar{align-items:flex-start}.search-again{flex-wrap:wrap}.search-again input{flex-basis:100%}.search-again select{flex:1;max-width:none;min-height:42px}.search-again button{min-height:42px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
@@ -71,6 +79,7 @@ h1,h2,h3{font-family:'Fraunces',serif;line-height:1.08;font-weight:600;margin:0}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#resultsTitle">Skip to search results</a>
 <div class="wrap">
   <nav class="topbar" aria-label="Main navigation">
     <a href="index.html" class="brand" style="text-decoration:none">Terrawise <span style="color:var(--laterite)">/</span> Field intelligence</a>
