@@ -33,7 +33,7 @@ Soil characteristics and regional conditions are important context when learning
 
 ## How It Works
 
-Explore the homepage's soil profiles or search by soil type, crop, or region, then open a detailed report for additional information. The crop–region cross-check uses a simplified built-in index, so a missing match indicates a gap in that index rather than proof that a crop cannot grow in a location.
+Explore the homepage's soil profiles or search by soil type, crop, or region, then open a detailed report for additional information. The crop–region cross-check uses a simplified built-in index.
 
 ---
 
