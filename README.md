@@ -21,10 +21,6 @@ Terrawise is an interactive reference guide to major Indian soil types, the regi
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,js,github" height="50" alt="HTML, CSS, JavaScript and GitHub">
 </p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Inline%20SVG-Illustrations-6C8B4E?style=flat-square" alt="Inline SVG">
-  <img src="https://img.shields.io/badge/Static%20Website-GitHub%20Pages-222222?style=flat-square&logo=githubpages&logoColor=white" alt="Static website">
-</p>
 
 ---
 
